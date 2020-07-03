@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0d1f7dd8-91f4-4e39-81c9-78f36cccc66a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     slip_tetap.`kode_slip` AS slip_tetap_kode_slip,
+     slip_tetap.`nip` AS slip_tetap_nip,
+     slip_tetap.`id_admin` AS slip_tetap_id_admin,
+     slip_tetap.`tgl_slip` AS slip_tetap_tgl_slip,
+     slip_tetap.`total_cuti` AS slip_tetap_total_cuti,
+     slip_tetap.`total_lembur` AS slip_tetap_total_lembur,
+     slip_tetap.`total` AS slip_tetap_total
+FROM
+     `slip_tetap` slip_tetap]]>
+	</queryString>
+	<field name="slip_tetap_kode_slip" class="java.lang.String"/>
+	<field name="slip_tetap_nip" class="java.lang.String"/>
+	<field name="slip_tetap_id_admin" class="java.lang.String"/>
+	<field name="slip_tetap_tgl_slip" class="java.sql.Date"/>
+	<field name="slip_tetap_total_cuti" class="java.lang.Integer"/>
+	<field name="slip_tetap_total_lembur" class="java.lang.Integer"/>
+	<field name="slip_tetap_total" class="java.lang.Long"/>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement uuid="842967f4-29a0-4e23-94a4-82217888d3d8" mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699"/>
+				<staticText>
+					<reportElement uuid="d0735f68-a48e-40ca-9afa-eb4658704f69" x="20" y="0" width="474" height="43" forecolor="#FFFFFF"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Sistem Penggajian Karyawan]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="9684372e-7483-4b44-8dc7-5f3c35fd8358" x="393" y="57" width="180" height="20" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Slip Pegawai Tetap]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement uuid="58d982e8-3fe9-4f0e-b339-d1db4a892d3c" x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+			</line>
+			<staticText>
+				<reportElement uuid="cc852b0d-2784-4e74-8a8b-f65d7ad37219" mode="Opaque" x="0" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[slip_tetap_kode_slip]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e9b0fe2c-f328-45f9-a7b9-6c2a7b5b2970" mode="Opaque" x="79" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[slip_tetap_nip]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9732ed7d-0b82-4861-bd7b-f3939b787782" mode="Opaque" x="158" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[slip_tetap_id_admin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e3f71292-f2b0-4c5c-b2a2-077b87fca586" mode="Opaque" x="237" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[slip_tetap_tgl_slip]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f77c10a5-9983-465b-b038-02299421bfe7" mode="Opaque" x="316" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[slip_tetap_total_cuti]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8e0cc3c7-1f0e-46b8-9a1e-04ba91c50564" mode="Opaque" x="395" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[slip_tetap_total_lembur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3aa49388-ce80-40a3-9e60-63112bfa7885" mode="Opaque" x="474" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[slip_tetap_total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement uuid="359667e9-d1c8-44b7-af46-cd880bc17ddc" positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="8eab32e3-d560-4319-9e59-a2f1e9c5447c" x="0" y="0" width="79" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{slip_tetap_kode_slip}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="79bc2f90-172d-4445-ac05-d0f0a030949d" x="79" y="0" width="79" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{slip_tetap_nip}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="697b6fc9-cf87-46f2-ae3a-13d52a6dd8d3" x="158" y="0" width="79" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{slip_tetap_id_admin}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="50c83dbb-7696-4674-8303-bfed913f5ee2" x="237" y="0" width="79" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{slip_tetap_tgl_slip}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="43953d30-0f57-4676-a3f9-bcd15330ad41" x="316" y="0" width="79" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{slip_tetap_total_cuti}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="b84bedb4-0689-406f-bc64-b5eb3c0307a1" x="395" y="0" width="79" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{slip_tetap_total_lembur}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="6b281701-f6a5-496c-bf8c-86da0d1eefca" x="474" y="0" width="79" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{slip_tetap_total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement uuid="46b7a76f-3aab-41c5-a214-f5f336813906" mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="6d9379cd-e045-4b49-a520-749f2b878eda" mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="93249d58-6629-407c-974d-d48d66561e30" x="0" y="4" width="100" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
